@@ -3,6 +3,12 @@ const puppeteer = require('puppeteer');
 const app = express();
 app.use(express.json());
 
+// Add a root route
+app.get('/', (req, res) => {
+  res.send('Healthline Automation Service is running!');
+});
+
+// Existing /process-urls route
 app.post('/process-urls', async (req, res) => {
   const urls = req.body.urls;
   const results = [];
