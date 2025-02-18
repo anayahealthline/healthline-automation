@@ -128,3 +128,19 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+# Ignore Go binary files
+/bin/
+/obj/
+
+# Ignore Go dependency files
+/vendor/
+
+# Ignore Go-related build files
+go.sum
+go.mod
+
+# Ignore IDE/editor files
+.idea/
+.vscode/
+*.swp
